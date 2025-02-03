@@ -9,6 +9,8 @@ import streamlit as st
 import subprocess
 import os
 import pygame
+import sys
+subprocess.run([sys.executable, "-m", "pip", "install", "librosa"])
 import librosa
 
 # Set the working directory
