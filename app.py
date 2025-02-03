@@ -23,7 +23,8 @@ def run_song_finder():
     st.write(os.path.isfile(os.listdir(os.getcwd())[16]))
     st.write(os.listdir(os.getcwd()))
     result = subprocess.run(
-        ["python", "songFinder.py"],
+        #["python", "songFinder.py"],
+        ["python", os.listdir(os.getcwd())[16]],
         capture_output=False,
         text=False
     )
