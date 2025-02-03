@@ -15,7 +15,6 @@ import sys
 
 # Function to run songFinder.py and get the output
 def run_song_finder():
-    st.write(os.listdir(os.getcwd()))
     result = subprocess.run(
         [f"{sys.executable}", "songFinder.py"],
         capture_output=False,
