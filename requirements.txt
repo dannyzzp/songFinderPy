@@ -1,4 +1,4 @@
 streamlit
 pandas
 pygame
-librosa
+librosa==0.10.1
