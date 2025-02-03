@@ -14,7 +14,7 @@ import pygame
 #os.chdir('C:\\Users\\danny\\onedrive\\desktop\\songfinder')
 print(os.getcwd())
 # Initialize pygame mixer
-pygame.mixer.init()
+#pygame.mixer.init()
 
 # Function to run songFinder.py and get the output
 def run_song_finder():
