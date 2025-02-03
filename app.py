@@ -29,16 +29,16 @@ def run_song_finder():
     st.write(os.listdir(os.getcwd())[16])
     st.write(os.path.isfile(os.listdir(os.getcwd())[16]))
     st.write(os.listdir(os.getcwd()))
-    # result = subprocess.run(
-    #     ["python", "songFinder.py"],
-    #     #["python", os.listdir(os.getcwd())[16]],
-    #     capture_output=False,
-    #     text=False
-    # )
-    # if result.returncode != 0:
-    #     st.error("Error processing the file.")
-    #     return None
-    exec(open("/mount/src/songfinderpy/songFinder.py").read())
+    result = subprocess.run(
+        [f"{sys.executable}", "songFinder.py"],
+        #["python", os.listdir(os.getcwd())[16]],
+        capture_output=False,
+        text=False
+    )
+    if result.returncode != 0:
+        st.error("Error processing the file.")
+        return None
+    # exec(open("/mount/src/songfinderpy/songFinder.py").read())
     # Parse the output to get the song names
     songs = []
     with open("songRecs.txt", "r") as file:
