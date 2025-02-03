@@ -73,6 +73,8 @@ from os.path import isfile, join
 import os
 #songsFolder = '/content/drive/My Drive/Colab Notebooks/audioAnalytics/songs'
 songsFolder = os.getcwd()
+st.write(songsFolder)
+st.write(os.listdir(songsFolder))
 #onlyFiles = [f.replace('.mp3', '') for f in listdir(songsFolder) if isfile(join(songsFolder, f))]
 with open('onlyFiles.pkl', 'rb') as f:
     onlyFiles = pickle.load(f)
