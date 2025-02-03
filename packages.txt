@@ -1,2 +1,3 @@
 ffmpeg
 libsndfile1-dev
+python3.7-venv
