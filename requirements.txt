@@ -1,8 +1,4 @@
 streamlit
 pandas
 pygame
-subprocess
 librosa
-math
-pickle
-sys
