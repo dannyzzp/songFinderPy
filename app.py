@@ -21,7 +21,7 @@ st.write(x)
 #os.chdir('C:\\Users\\danny\\onedrive\\desktop\\songfinder')
 st.write(os.getcwd())
 # Initialize pygame mixer
-#pygame.mixer.init()
+pygame.mixer.init()
 
 # Function to run songFinder.py and get the output
 def run_song_finder():
@@ -48,7 +48,7 @@ def run_song_finder():
 
 # Function to play an audio file
 def play_audio(file_path):
-    pygame.mixer.init()
+    # pygame.mixer.init()
 
     if pygame.mixer.music.get_busy():  # Stop any currently playing music
         pygame.mixer.music.stop()
