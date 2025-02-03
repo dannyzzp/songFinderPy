@@ -9,9 +9,7 @@ Original file is located at
 
 # from google.colab import drive
 # drive.mount('/content/drive')
-# st.write(1212)
 import sys
-print(sys.executable)
 import os
 import numpy as np
 import pandas as pd

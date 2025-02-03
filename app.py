@@ -10,9 +10,8 @@ import subprocess
 import os
 import sys
 
-# Set the working directory
+# Set the local working directory
 # os.chdir('C:\\Users\\danny\\onedrive\\desktop\\songfinder')
-st.write(os.getcwd())
 
 # Function to run songFinder.py and get the output
 def run_song_finder():
