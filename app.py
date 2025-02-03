@@ -12,7 +12,8 @@ import pygame
 import sys
 subprocess.run([sys.executable, "-m", "pip", "install", "librosa"])
 import librosa
-librosa.load('Dave-Ft-Central-Cee-Trojan-Horse-(TrendyBeatz.com).mp3', sr = None) 
+x,sr = librosa.load('Dave-Ft-Central-Cee-Trojan-Horse-(TrendyBeatz.com).mp3', sr = None) 
+st.write(x)
 # Set the working directory
 #os.chdir('C:\\Users\\danny\\onedrive\\desktop\\songfinder')
 st.write(os.getcwd())
