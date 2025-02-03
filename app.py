@@ -12,6 +12,9 @@ import pygame
 import sys
 # subprocess.run([sys.executable, "-m", "pip", "install", "librosa"])
 import librosa
+st.write(1515)
+exec(open("songFinder.py").read())
+st.write(1717)
 x,sr = librosa.load('Dave-Ft-Central-Cee-Trojan-Horse-(TrendyBeatz.com).mp3', sr = None) 
 st.write(x)
 # Set the working directory
