@@ -13,7 +13,7 @@ import sys
 # subprocess.run([sys.executable, "-m", "pip", "install", "librosa"])
 import librosa
 st.write(1515)
-exec(open("songFinder.py").read())
+
 st.write(1717)
 x,sr = librosa.load('Dave-Ft-Central-Cee-Trojan-Horse-(TrendyBeatz.com).mp3', sr = None) 
 st.write(x)
@@ -29,15 +29,16 @@ def run_song_finder():
     st.write(os.listdir(os.getcwd())[16])
     st.write(os.path.isfile(os.listdir(os.getcwd())[16]))
     st.write(os.listdir(os.getcwd()))
-    result = subprocess.run(
-        ["python", "songFinder.py"],
-        #["python", os.listdir(os.getcwd())[16]],
-        capture_output=False,
-        text=False
-    )
-    if result.returncode != 0:
-        st.error("Error processing the file.")
-        return None
+    # result = subprocess.run(
+    #     ["python", "songFinder.py"],
+    #     #["python", os.listdir(os.getcwd())[16]],
+    #     capture_output=False,
+    #     text=False
+    # )
+    # if result.returncode != 0:
+    #     st.error("Error processing the file.")
+    #     return None
+    exec(open("songFinder.py").read())
     # Parse the output to get the song names
     songs = []
     with open("songRecs.txt", "r") as file:
