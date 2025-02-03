@@ -10,7 +10,7 @@ import subprocess
 import os
 import pygame
 import sys
-subprocess.run([sys.executable, "-m", "pip", "install", "librosa"])
+# subprocess.run([sys.executable, "-m", "pip", "install", "librosa"])
 import librosa
 x,sr = librosa.load('Dave-Ft-Central-Cee-Trojan-Horse-(TrendyBeatz.com).mp3', sr = None) 
 st.write(x)
