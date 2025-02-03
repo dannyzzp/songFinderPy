@@ -1,0 +1,9 @@
+streamlit
+pandas
+pygame
+os
+subprocess
+librosa
+math
+pickle
+sys
