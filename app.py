@@ -11,8 +11,8 @@ import os
 import pygame
 
 # Set the working directory
-os.chdir('C:\\Users\\danny\\onedrive\\desktop\\songfinder')
-
+#os.chdir('C:\\Users\\danny\\onedrive\\desktop\\songfinder')
+print(os.getcwd())
 # Initialize pygame mixer
 pygame.mixer.init()
 
