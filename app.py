@@ -38,7 +38,7 @@ def run_song_finder():
     # if result.returncode != 0:
     #     st.error("Error processing the file.")
     #     return None
-    exec(open("songFinder.py").read())
+    exec(open("/mount/src/songfinderpy/songFinder.py").read())
     # Parse the output to get the song names
     songs = []
     with open("songRecs.txt", "r") as file:
