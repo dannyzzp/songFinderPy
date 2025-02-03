@@ -48,10 +48,11 @@ def run_song_finder():
 
 # Function to play an audio file
 def play_audio(file_path):
+    pygame.mixer.init()
+
     if pygame.mixer.music.get_busy():  # Stop any currently playing music
         pygame.mixer.music.stop()
     # Initialize pygame mixer
-    pygame.mixer.init()
     pygame.mixer.music.load(file_path)
     pygame.mixer.music.play()
 
